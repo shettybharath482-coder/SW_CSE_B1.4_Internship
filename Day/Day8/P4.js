@@ -5,10 +5,9 @@ x = 30;
 console.log(x)
 
 if (true) {
-    var message = "Hello";
+var message = "Hello";
 }
 // var in JS is not block-scoped
-console.log(message);
 console.log(message);
 
 // ****************************************************
@@ -18,10 +17,13 @@ let score = 100;
 score = 160; // re-assignment is valid
 console.log(score)
 
-let secret; // Declare outside the block
-
 if (true) {
-    secret = "Password@123"; // Assign inside the block
+     let secret = "Password@123"; //let in JS is block-scoped
 }
+//console.log(secret); //ReferenceError: secret is not defined
 
-console.log(secret); // Password@123
+// const: variable which cannot be reassignned after its declaration
+if (true) {
+    const pi = 3.14159;
+    console.log(pi); // ✅ Works
+}
