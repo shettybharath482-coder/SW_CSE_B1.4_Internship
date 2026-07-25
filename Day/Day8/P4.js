@@ -25,5 +25,5 @@ if (true) {
 // const: variable which cannot be reassignned after its declaration
 if (true) {
     const pi = 3.14159;
-    console.log(pi); // ✅ Works
+    console.log(pi); 
 }
