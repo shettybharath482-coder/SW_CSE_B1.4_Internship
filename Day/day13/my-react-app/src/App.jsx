@@ -1,10 +1,12 @@
-import Button from "./components/FunctionalComponent";
-import { LeftArrow, RightArrow } from "./components/FunctionalComponentTwo";
+import Button from './components/FunctionalComponent'
+import { LeftArrow,RightArrow } from "./components/FunctionalComponentTwo";
 
+import ProfileList from "./components/Props";
 const name = "Amay";
 const isLoggedIn = false;
 
 function App() {
+ 
   return (
     // React Fragments
     <>
@@ -17,7 +19,7 @@ function App() {
       <input type="text" />
 
       {/* JSX Rule 3: use camelCase for attributes */}
-      <button>Click</button>
+      <button onClick onSubmit>Click</button>
 
       {/* JSX Rule 4: Embedding JavaScript with curly braces */}
       <h3>Hello, {name}</h3>
@@ -28,8 +30,11 @@ function App() {
       <Button />
       <LeftArrow />
       <RightArrow />
+
+      <ProfileList />
     </>
-  );
+    
+  )
 }
 
-export default App;
+export default App
